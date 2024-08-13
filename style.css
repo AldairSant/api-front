@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    min-width: 335px;
+    height: 30rem;
+    background-color: rgb(34, 140, 239);
+    font-family: sans-serif;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.758);
+}
+
+#submitBtn{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#submitBtn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#submitBtn:active{
+    background-color: rgba(255, 255, 255, 0.497);
+}
+
+input{
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.products-list-container{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    width: 30vw;
+    min-width: 335px;
+    height: 30rem;
+    background-color: rgba(6, 139, 46, 0.904);
+    font-family: sans-serif;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.758);
+    overflow-y: scroll;
+
+}
+::selection {
+    background: yellow;
+    color: black;
+}
+
+.products-list-container::-webkit-scrollbar {
+    display: none;
+}
+
+#product-list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background-color: gray; */
+    width: 97%;
+    height: 100%;
+    margin: 5px 0;
+    border: solid 2px black;
+    padding : 5px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.473), rgba(255, 255, 255, 0.664));
+    animation: animacao 1s;
+    border-radius: 10px;
+}
+
+.icon-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 15px;
+    /* background-color: rgba(255, 255, 255, 0.747); */
+    height: 20px;
+    color: red;
+    top: 15px;
+    right: 15px;
+}
+
+p{
+    margin: 5px 0;
+}
+
+@keyframes animacao {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
